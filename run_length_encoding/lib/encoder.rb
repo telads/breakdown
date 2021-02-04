@@ -10,8 +10,8 @@ class Encoder
   end
 
   def get_first_letter_and_length(letters)
-    first = letters[1]
-    length = letters.length
+    length = get_length(letters)
+    first = get_first_letter(letters)
     "#{first}#{length}"
   end
 
