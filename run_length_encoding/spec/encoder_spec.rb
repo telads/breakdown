@@ -1,4 +1,5 @@
-require "encoder"
+ require './lib/encoder'
+
 
 RSpec.describe Encoder do
   # == Run Length Encoding ==
@@ -24,13 +25,13 @@ RSpec.describe Encoder do
   # It's important that you understand what's going on and the code you're
   # writing. If you're just trying out combinations, you should take a break.
 
-  # it "gets the length of a string" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_length("aaa")
-  #   result_2 = encoder.get_length("bbbbb")
-  #   expect(result_1).to eq 3
-  #   expect(result_2).to eq 5
-  # end
+  it "gets the length of a string" do
+    encoder = Encoder.new
+    result_1 = encoder.get_length("aaa")
+    result_2 = encoder.get_length("bbbbb")
+    expect(result_1).to eq 3
+    expect(result_2).to eq 5
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
