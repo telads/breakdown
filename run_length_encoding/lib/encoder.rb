@@ -17,7 +17,14 @@ class Encoder
 
   def string_to_list(letters)
     letters.split(//)
+  end
 
+  def is_all_as?(letters)
+    if letters.match('aaa')
+      true
+    else
+      false
+    end
   end
 
 end
