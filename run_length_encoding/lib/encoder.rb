@@ -15,4 +15,9 @@ class Encoder
     "#{first}#{length}"
   end
 
+  def string_to_list(letters)
+    letters.split(//)
+
+  end
+
 end
