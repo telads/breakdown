@@ -19,12 +19,38 @@ class Encoder
     letters.split(//)
   end
 
-  def is_all_as?(letters)
-    if letters.match('aaa')
-      true
-    else
-      false
+  def is_all_as?(word)
+    a = string_to_list(word)
+    a.each do |letter|
+      return false unless letter == "a"
     end
-  end
+    true
 
+
+  end
+  #
+  # def is_all_this_letter?(word, letter)
+  #   # change string to list
+  #   # map over word
+  #   # if all a its true
+  #   # elsif if all b its true
+  #   # else false
+  #   a = string_to_list(word)
+  #     result = a.each do |character|
+  #     end
+  #       # binding.irb
+  #       if result == letter
+  #         # binding.irb
+  #         true
+  #       elsif result == letter
+  #         true
+  #       else
+  #         false
+  #       end
+  # end
+
+  def is_all_this_letter?(word, character)
+    a = is_all_as?(word)
+
+  end
 end
